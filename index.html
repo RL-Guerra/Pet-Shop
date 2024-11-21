@@ -6,32 +6,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="icon" href="img/icon.png">
-    <script src="js/original.js" defer></script>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Pet Sop</title>
 </head>
 <body>
-    <header>Sistema de Gerenciamento de PetShop</header>
+    <header><p><i class="fi fi-rr-globe"></i>Sistema de Gerenciamento de PetShop<i class="fi fi-rr-globe"></i></p></header>
 
     <div id="principal">
-        <h1>Cadastro de Pets</h1>
+        <h1><i class="fi fi-rr-clipboard-list-check"></i>Cadastro de Pets<i class="fi fi-rr-clipboard-list-check"></i></h1>
         <form id="form">
             <br>
-            <label>Nome</label> 
-            <input type="text" name="txt_title" id="title">
+            <label><i class="fi fi-rr-pencil"></i> Nome</label> 
+            <input type="text" name="txt_nome" id="nome">
             <br>
 
-            <label>Cor</label>
-            <input type="text" id="subtitle">
+            <label><i class="fi fi-rr-palette"></i> Cor</label>
+            <input type="text" id="cor">
             <br>
 
-            <label>Imagem</label> 
+            <label><i class="fi fi-rr-picture"></i> Imagem</label> 
             <input type="text" name="txt_image" id="image">
             <br>
 
-            <label>Raça</label> 
-            <input type="text" name="txt_price" id="price">
+            <label><i class="fi fi-rr-claw-marks"></i> Raça</label> 
+            <input type="text" name="txt_raca" id="raca">
             <br>
 
             <div id="salvar"> Salvar </div>
@@ -39,13 +41,13 @@
     </div>
 
 
-    <div id="listLivros">
-        <h1> Listagem de Livros </h1>
+    <div id="listPets">
+        <h1><i class="fi fi-rr-paw"></i>LISTAGEM DE PETS<i class="fi fi-rr-paw"></i></h1>
         <div class="linha">
-            <div class="titulo">Nome</div>
-            <div class="titulo">Cor</div>
-            <div class="titulo">Raça</div>
-            <div class="titulo">Opções</div>
+            <div class="titulo"><i class="fi fi-rr-pencil"></i> Nome</div>
+            <div class="titulo"><i class="fi fi-rr-palette"></i> Cor</div>
+            <div class="titulo"><i class="fi fi-rr-claw-marks"></i> Raça</div>
+            <div class="titulo"><i class="fi fi-rs-tools"></i> Opções</div>
         </div>
         <div id="listDados">
             <!--

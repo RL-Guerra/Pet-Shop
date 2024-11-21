@@ -1,188 +1,188 @@
 :root{
-    --fonte-principal: 'Inter';
+    --fonte-principal: 'Inter', sans-serif;
     --titulo: #ffffff;
-    --letras: #c09d9d;
-    --letras-animada: #cc00ff;
-    --fundo: #000000;
-    --fundo2: #2c2c2c;
-    --fundo-animado: #000000;
-    --borda: #31484b;
-    --borda-animada: #3700ff;
-    --card: #2f3738;
+    --letras: #000000;
+    --preto: #000000;
+    --branco: #ffffff;
+    --header: #07c3f7;
+    --fundo: #ffffff;
+    --sombra: #000000;
+    --h1-fundo: #023b4c;
+    --h1-letra: #ffffff;
+    --botao-letra: #ffffff;
+    --botao: #00aa06;
+    --botao-animado: #00d0ff;
+    --botao-animado-letra: #050505;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 body {
     font-family: var(--fonte-principal);
-    background-image: linear-gradient(#33ae53,#0892c4); 
+    background-image: linear-gradient(#a18C74,#cac6bb); 
+}
+
+/* arruma esse css de merda do marcel */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--preto);
+    padding-top: 10px;
+    margin-bottom: 5px;
+    
+    & p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 11px;
+        color: var(--header);
+        text-align: center;
+        font-size: 2em;
+        font-style: italic;
+        font-weight: bold;
+    }
 }
 
 #principal{
-    width: 500px;
+    width: 600px;
     height: 500px;
-    background-color:#ffffff;
+    background-color: var(--fundo);
     margin: auto;
     margin-bottom: 50px;
-    box-shadow: 10px 10px 50px #000000;
+    box-shadow: 10px 10px 50px var(--sombra);
 
+    & h1{
+        color: var(--h1-letra);
+        background-color: var(--h1-fundo);
+        font-size: large 40px;
+        text-align: center;
+        width: inherit;
+        height: 80px;
+        padding-top: 20px;
+    }
+    & form{
+        width: 95%;
+        margin: auto;
+    }
+    & label{
+        color: var(--letras);
+        width: 500px;
+        height: 20px;
+        display: block;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    & input{
+        width: 90%;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 1.3em;
+        margin-bottom: 12px;
+    }
+    & input:hover{
+        border: solid 1px #ff0000;
+    }
+    & input:focus{
+        border: solid 2px #00aa06;
+    }
+    & #salvar{
+        margin-top: 10px;
+        padding-top: 10px;
+        display: block;
+        text-align: center;
+        background-color: var(--botao);
+        border-radius: 15px;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--botao-letra);
+        height: 40px;
+        width: 120px;
+        margin-left: 37%;
+    }
+    & #salvar:hover{
+        background-color: var(--botao-animado);
+        color: var(--botao-animado-letra);
+        cursor: pointer;
+    }
 }
 
-#principal h1{
-    padding-top: 20px;
-    width: inherit;
-    height: 80px;
-    text-align: center;
-    background-color:#023b4c;
-    color: #ffffff;
-    font-family: Verdana;
+@keyframes typing {
+    0% { border-color: transparent; }
+    50% { border-color: #33ff00; }
+    0% { border-color: transparent; }
 }
 
-form{
-    width: 90%;
-    margin: auto;
+input:focus {
+    outline: none;
+    animation: typing 5s infinite;
 }
 
 
-#principal label{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 50px;
-    height: 20px;
-    display: block;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-#principal input, textarea{
-    width: 90%;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    border: solid 1px #c1c1c1;
-    margin-bottom: 10px;
-}
-
-#principal input[name="txt_price"]{
-    width: 30%;
-}
-
-#subtitle {
-    height: 100px;
-    resize: none;
-}
-
-#salvar{
-
-    margin-top: 10px;;
-    padding-top: 10px;
-    display: block;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    background-color: #00aa06;
-    text-align: center;
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#salvar:hover{
-    background-color: #06b6de;
-    color: #080808;
-    cursor: pointer;
-}
-
-#listLivros{
-
-    width: 1200px;
+#listPets{
+    width: 50%;
     height: auto;
     min-height: 200px;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #00c3ff54;
     padding-top: 0px;
     margin: auto;
     margin-bottom: 50px;
     padding: 10px;
-    box-shadow: 10px 10px 50px #000000;
-}
+    box-shadow: 10px 10px 50px #3b377a;
+    border-radius: 15px;
 
-#listLivros h1{
-    padding-top: 20px;
-    width: 99%;
-    margin: auto;
-    margin-bottom: 10px;;
-    height: 80px;
-    text-align: center;
-    background-color:#023b4c;
-    color: #ffffff;
-    font-family: Verdana;
-}
-
-#listLivros .linha{
-    width: 99%;
-    height: 40px;
-    margin-bottom: 10px;
-    display: flex;
-}
-
-.titulo{
-    width: 30%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2em;
-    padding-top: 10px;
-    text-align: center;
-    font-weight: bold;
-    background-color: #020202;
-    color: #06b6de;
-    margin-right: 5px;
-}
-
-
-
-#listDados .linha div{
-    width: 30%;
-    margin-right: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.dados div{
-    width: 50px;
-    background-color: rgb(167, 200, 189);
-    box-sizing: border-box;
-    margin-right: 5px;
-    padding: 10px;
-    
-}
-.dados img{
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-   
-}
-
-.dados img:hover{
-    cursor: pointer;
-}
-header, footer{
-    width: 100%;
-    height: 100px;
-    background-color: #000000;
-    
-}
-
-header{
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
-    text-align: center;
-    color: #07c3f7;
-    font-weight: bold;
-    padding-top: 20px;
+    & h1{
+        color: var(--branco);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 10px;
+        text-align: center;
+        background-color: #0040538c;
+        border-radius: 10px;
+        padding-top: 20px;
+        height: 80px;
+        width: 99%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    & .linha{
+        display: flex;
+        width: 99%;
+        height: 43px;
+        margin-bottom: 7px;
+    }
+    .titulo{
+        color: var(--header);
+        background-color: var(--preto);
+        padding-top: 11px;
+        text-align: center;
+        width: 30%;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    & #listDados .linha div{
+        width: 30%;
+        margin-right: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    & .dados div{
+        width: 50px;
+        background-color:var(--branco);
+        box-sizing: border-box;
+        margin-right: 15px;
+        padding: 10px;
+    }
+    & .dados img{
+        width: 30px;
+        height: 30px;
+        margin-right: 17px;
+    }
+    & .dados img:hover{
+        cursor: pointer;
+    }
 }
 
 /*Rodapé*/

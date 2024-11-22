@@ -142,7 +142,7 @@ const setCardItens = function(dadosPets){
     });
 }
 
-// Função para buscar um pet pelo ID
+//Função para buscar um pet pelo ID
 const getBuscarPet = async function(id){
     let url = `https://app-avaliacao-brh0avd2ahegehac.brazilsouth-01.azurewebsites.net/projeto3/fecaf/buscar/pet/${id}`;
     let response = await fetch(url);
@@ -173,7 +173,13 @@ botaoSalvar.addEventListener('click', function() {
     }
 });
 
-// Carrega a lista de pets ao carregar a página
+//Carrega a lista de pets ao carregar a página
 window.addEventListener('load', function(){
     getPets();
+});
+
+//Função do evento de click no icone de menu
+document.getElementById('menuIcon').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
 });

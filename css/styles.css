@@ -27,12 +27,11 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: var(--fonte-principal);
     background-image: linear-gradient(var(--pastel-brown),var(--pastel-grey));
 }
-/* arruma esse css de merda do marcel */
+
 header{
     width: 100%;
     height: 100px;
@@ -49,6 +48,50 @@ header{
         font-size: 2em;
         font-style: italic;
         font-weight: bold;
+    }
+    & a{
+        color: var(--header);
+        text-decoration: none;
+    }
+    & a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+section{
+    margin-left: 15px;
+    color: var(--silver-sand);
+
+    & #menuIcon {
+        font-size: 30px;
+        cursor: pointer;
+    }
+    & #menu{
+        position: absolute;
+        background-color: var(--granite);
+        padding: 10px;
+        top: auto;
+        left: auto;
+        border-radius: 10px;
+    }
+    & #menu.hidden {
+        display: none;
+    }
+    & ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    & ul li a{
+        text-decoration: none;
+        color: var(--branco);
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: block;
+    }
+    & ul li a:hover{
+        background-color: var(--green-mist);
+        color: var(--preto);
     }
 }
 
@@ -126,7 +169,6 @@ input:focus {
     animation: typing 5s infinite;
 }
 
-
 #listPets{
     width: 50%;
     height: auto;
@@ -180,6 +222,7 @@ input:focus {
         box-sizing: border-box;
         margin-right: 15px;
         padding: 10px;
+        font-size: 13.4px;
     }
     & .dados img{
         width: 30px;

@@ -10,19 +10,18 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="icon" href="img/icon.png">
-    <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/home.js" defer></script>
+    <link rel="stylesheet" href="css/home.css">
     <title>Pet Sop</title>
 </head>
 <body>
     <header>
         <p>
-            <i class="fi fi-rr-globe"></i>Sistema de Gerenciamento do PetShop<i class="fi fi-rr-globe"></i>
-            <br>
+            <i class="fi fi-rr-globe"></i>Pets Registrados<i class="fi fi-rr-globe"></i>
         </p>
     </header>
 
-    <section id="head">
+    <section>
         <i id="menuIcon" class="fi fi-br-menu-burger"></i>
         <nav id="menu" class="hidden">
             <ul>
@@ -32,50 +31,7 @@
         </nav>
     </section>
 
-    <div id="principal">
-        <h1>
-            <i class="fi fi-rr-clipboard-list-check"></i>Cadastro de Pets<i class="fi fi-rr-clipboard-list-check"></i>
-        </h1>
-        <form id="form">
-            <br>
-            <label><i class="fi fi-rr-pencil"></i> Nome</label> 
-            <input type="text" name="txt_nome" id="nome">
-            <br>
-
-            <label><i class="fi fi-rr-palette"></i> Cor</label>
-            <input type="text" id="cor">
-            <br>
-
-            <label><i class="fi fi-rr-picture"></i> Imagem</label> 
-            <input type="text" name="txt_image" id="image">
-            <br>
-
-            <label><i class="fi fi-rr-claw-marks"></i> Raça</label> 
-            <input type="text" name="txt_raca" id="raca">
-            <br>
-
-            <div id="salvar"> Salvar </div>
-        </form>
-    </div>
-
-
-    <div id="listPets">
-        <h1><i class="fi fi-rr-paw"></i>LISTAGEM DE PETS<i class="fi fi-rr-paw"></i></h1>
-        <div class="linha">
-            <div class="titulo"><i class="fi fi-rr-pencil"></i> Nome</div>
-            <div class="titulo"><i class="fi fi-rr-palette"></i> Cor</div>
-            <div class="titulo"><i class="fi fi-rr-claw-marks"></i> Raça</div>
-            <div class="titulo"><i class="fi fi-rs-tools"></i> Opções</div>
-        </div>
-        <div id="listDados">
-        <!--<div id="dados" class="linha dados"> 
-                <div>Nome</div>
-                <div>Cor</div>
-                <div>Raça</div>
-                <div><span><img src="img/editar.png"></span>  <span><img src="img/excluir.png"></span></div>
-            </div>-->
-        </div>
-    </div>
+    <main id="characterContainer"></main>
 
     <footer id="rodape">
         <p>

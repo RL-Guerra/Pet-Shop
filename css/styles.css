@@ -6,13 +6,19 @@
     --branco: #ffffff;
     --header: #07c3f7;
     --fundo: #ffffff;
-    --sombra: #000000;
+    --sombra: #e2b496;
     --h1-fundo: #023b4c;
     --h1-letra: #ffffff;
     --botao-letra: #ffffff;
     --botao: #00aa06;
     --botao-animado: #00d0ff;
     --botao-animado-letra: #050505;
+
+    --pastel-grey: #cac6bb;
+    --silver-sand: #e0dfda;
+    --granite: #868174;
+    --pastel-brown: #a18c74;
+    --green-mist: #d2cbaf;
 }
 
 *{
@@ -24,16 +30,16 @@
 
 body {
     font-family: var(--fonte-principal);
-    background-image: linear-gradient(#a18C74,#cac6bb); 
+    background-image: linear-gradient(var(--pastel-brown),var(--pastel-grey));
 }
-
 /* arruma esse css de merda do marcel */
 header{
     width: 100%;
     height: 100px;
-    background-color: var(--preto);
+    background-color: #8d7961ab;
     padding-top: 10px;
     margin-bottom: 5px;
+    border-bottom: 1px solid var(--sombra);
     
     & p{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -49,7 +55,7 @@ header{
 #principal{
     width: 600px;
     height: 500px;
-    background-color: var(--fundo);
+    background-color: var(--silver-sand);
     margin: auto;
     margin-bottom: 50px;
     box-shadow: 10px 10px 50px var(--sombra);
@@ -126,20 +132,20 @@ input:focus {
     height: auto;
     min-height: 200px;
     overflow: hidden;
-    background-color: #00c3ff54;
+    background-color: var(--granite);
     padding-top: 0px;
     margin: auto;
     margin-bottom: 50px;
     padding: 10px;
-    box-shadow: 10px 10px 50px #3b377a;
+    box-shadow: 10px 10px 50px var(--sombra);
     border-radius: 15px;
 
     & h1{
-        color: var(--branco);
+        color: var(--header);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         letter-spacing: 10px;
         text-align: center;
-        background-color: #0040538c;
+        background-color: var(--silver-sand);
         border-radius: 10px;
         padding-top: 20px;
         height: 80px;
@@ -188,22 +194,20 @@ input:focus {
 /*Rodapé*/
 footer#rodape {
     display: flexbox;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #8d7961c2;
+    color: var(--preto);
     margin-top: auto;
     clear: both;
-    border-top: 2px solid #c6c6c6;
+    border-top: 3px solid var(--sombra);
     text-align: center;
+    font-size: 20px;
 
-    & p{
-        background-color: #000000;
-    }
     & a{
         text-decoration: none;
-        color: #ffffff;
+        color: var(--preto);
     }
     & a:hover{
-        color: blue;
+        color: #ea00ff;
         text-decoration: underline;
     }
 }

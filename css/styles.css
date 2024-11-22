@@ -2,8 +2,6 @@
     --fonte-principal: 'Inter', sans-serif;
     --titulo: #ffffff;
     --letras: #000000;
-    --preto: #000000;
-    --branco: #ffffff;
     --header: #07c3f7;
     --fundo: #ffffff;
     --sombra: #e2b496;
@@ -13,7 +11,10 @@
     --botao: #00aa06;
     --botao-animado: #00d0ff;
     --botao-animado-letra: #050505;
-
+    
+    --preto: #000000;
+    --branco: #ffffff;
+    --areia: #f7cb07;
     --pastel-grey: #cac6bb;
     --silver-sand: #e0dfda;
     --granite: #868174;
@@ -43,7 +44,7 @@ header{
     & p{
         font-family: Georgia, 'Times New Roman', Times, serif;
         padding-top: 11px;
-        color: var(--header);
+        color: var(--areia);
         text-align: center;
         font-size: 2em;
         font-style: italic;
@@ -160,7 +161,7 @@ section{
 
 @keyframes typing {
     0% { border-color: transparent; }
-    50% { border-color: #33ff00; }
+    50% { border-color: var(--header) }
     0% { border-color: transparent; }
 }
 

@@ -2,9 +2,7 @@
     --fonte-principal: 'Inter', sans-serif;
     --titulo: #ffffff;
     --letras: #000000;
-    --preto: #000000;
-    --branco: #ffffff;
-    --header: #07c3f7;
+    --header: #f7cb07;
     --fundo: #ffffff;
     --sombra: #e2b496;
     --h1-fundo: #023b4c;
@@ -13,7 +11,9 @@
     --botao: #00aa06;
     --botao-animado: #00d0ff;
     --botao-animado-letra: #050505;
-
+    
+    --preto: #000000;
+    --branco: #ffffff;
     --pastel-grey: #cac6bb;
     --silver-sand: #e0dfda;
     --granite: #868174;
@@ -137,7 +137,7 @@ footer#rodape{
     display: flexbox;
     background-color: #8d7961c2;
     color: var(--preto);
-    margin-top: 20%;
+    margin-top: 20px;
     clear: both;
     border-top: 3px solid var(--sombra);
     text-align: center;
